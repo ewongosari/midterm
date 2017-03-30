@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Instruments of the Orchestra</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" >
+  <!-- Custom Fonts -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Allura">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Aclonica">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Questrial">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <!-- My CSS -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+ </head>
+
+ <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <!-- Responsive Navigation Bar -->
+    <nav class="navbar navbar-primary navbar-fixed-top" role="navigation">
+     <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+      <!-- Home -->
+      <a class="navbar-brand page-scroll" id="logo" href="#page-top">Instruments of the Orchestra</a>
+		 </div>
+     <!-- Menu -->
+		 <div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav">
+			 <li><a class="page-scroll" href="#instructions">Instructions</a></li>
+       <li><a class="page-scroll" href="#orchestra">Orchestra Introduction</a></li>
+       <li><a class="page-scroll" href="#instruments">Meet the Instruments</a></li>
+       <li><a class="page-scroll" href="#resources">Resources</a></li>
+			</ul>
+		 </div>
+		</nav>
+
+    <!-- Site Content -->
+    <div class="container">
+     <!-- Header Image -->
+     <header class="section">
+      <div class="row">
+       <div class="col-md-12">
+         <div class="hero-image">
+           <img alt="orchestra-header" src="img/header.jpg"></img>
+         </div>
+         <div class="hero-text">
+          <h1>WELCOME</h1>
+          <h3>Get ready to dive into the world of the orchestra</h3>
+          <button class="ScrollBtn">
+           <a class="page-scroll" href="#instructions"><i class="fa fa-chevron-down"></i></a>
+          </button>
+         </div>
+       </div>
+      </div>
+     </header>
+
+     <!-- Instructions Section -->
+     <section class="section" id="instructions">
+      <div class="row">
+       <div class="col-md-4">
+          <img alt="todo" src="http://lorempixel.com/140/140/">
+       </div>
+       <div class="col-md-8">
+        <h1>INSTRUCTIONS</h1>
+        <p>
+         <ol>
+          <li>Read these instructions completely before starting.</li>
+          <li>Watch a short introduction about the instruments of the orchestra.</li>
+          <li>Learn more about each instrument family by clicking on their categories.</li>
+          <li>Explore further resources once you are all done.</li>
+        </ol>
+        </p>
+       </div>
+      </div>
+     </section>
+
+     <!-- Orchestra Section -->
+     <section class="section" id="orchestra">
+      <div class="row">
+       <div class="col-md-12">
+        <h1>ORCHESTRA INTRODUCTION</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <button type="button" class="btn btn-info btn-lg" id="videoLink" data-toggle="modal" data-target="#modal-video">Watch Video <i class="fa fa-play"></i></button>
+         <!-- Pop-Up Video -->
+         <div id="modal-video" class="modal fade" tabindex="-1" role="dialog">
+          <div class="modal-dialog">
+           <div class="modal-content">
+            <div class="modal-header">
+             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+              <div class="embed-responsive embed-responsive-16by9">
+                <p>Video should play here. Not working yet. Will try Javascript.</p>
+               <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=M0Jc4sP0BEE" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>></iframe>
+              </div>
+            </div>
+           </div>
+          </div>
+         </div>
+       </div>
+      </div>
+     </section>
+
+     <!-- Instruments Section -->
+     <section class="section" id="instruments">
+      <div class="row">
+        <h1>MEET THE INSTRUMENTS</h1>
+		   <div class="col-md-3">
+			  <img alt="strings family" src="http://lorempixel.com/140/140/">
+			  <button type="button" class="btn btn-warning btn-block btn-lg">
+				STRINGS
+			  </button>
+		   </div>
+       <div class="col-md-3">
+        <img alt="woodwinds family" src="http://lorempixel.com/140/140/">
+        <button type="button" class="btn btn-warning btn-block btn-lg">
+        WOODWINDS
+        </button>
+       </div>
+       <div class="col-md-3">
+        <img alt="brass family" src="http://lorempixel.com/140/140/">
+        <button type="button" class="btn btn-warning btn-block btn-lg">
+        BRASS
+        </button>
+       </div>
+       <div class="col-md-3">
+			  <img alt="percussion family" src="http://lorempixel.com/140/140/">
+			  <button type="button" class="btn btn-warning btn-block btn-lg">
+				PERCUSSION
+			  </button>
+		   </div>
+	    </div>
+    </section>
+
+
+  <!-- Resources Section -->
+  <section class="section" id="resources">
+	 <div class="row">
+		<div class="col-md-12">
+      <h1>MORE RESOURCES</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+     <!-- Resources Tabs -->
+		 <div class="tabbable" id="tabs">
+			<ul class="nav nav-tabs">
+			 <li class="active">
+				<a href="#panel-websites" data-toggle="tab">Websites</a>
+			 </li>
+			 <li>
+				<a href="#panel-videos" data-toggle="tab">Videos</a>
+			 </li>
+       <li>
+				<a href="#panel-articles" data-toggle="tab">Articles</a>
+			 </li>
+			</ul>
+        <!-- Resources Lists -->
+        <div class="tab-content">
+          <!-- Websites -->
+					<div class="tab-pane active" id="panel-websites">
+            <p>
+						 <ul class="list-unstyled">
+							 <li><a href="#" target="_blank"></a>Link 1</li>
+               <p>Short description</p>
+               <li><a href="#" target="_blank"></a>Link 2</li>
+               <p>Short description</p>
+               <li><a href="#" target="_blank"></a>Link 3</li>
+               <p>Short description</p>
+               <li><a href="#" target="_blank"></a>Link 4</li>
+               <p>Short description</p>
+						 </ul>
+            </p>
+					</div>
+          <!-- Videos -->
+					<div class="tab-pane" id="panel-videos">
+            <p>
+						 <ul class="list-unstyled">
+							 <li><a href="#" target="_blank"></a>Link 1</li>
+               <p>Short description</p>
+               <li><a href="#" target="_blank"></a>Link 2</li>
+               <p>Short description</p>
+               <li><a href="#" target="_blank"></a>Link 3</li>
+               <p>Short description</p>
+               <li><a href="#" target="_blank"></a>Link 4</li>
+               <p>Short description</p>
+						 </ul>
+            </p>
+					</div>
+          <!-- Articles -->
+          <div class="tab-pane" id="panel-articles">
+            <p>
+						 <ul class="list-unstyled">
+							 <li><a href="#" target="_blank"></a>Link 1</li>
+               <p>Short description</p>
+               <li><a href="#" target="_blank"></a>Link 2</li>
+               <p>Short description</p>
+               <li><a href="#" target="_blank"></a>Link 3</li>
+               <p>Short description</p>
+               <li><a href="#" target="_blank"></a>Link 4</li>
+               <p>Short description</p>
+						 </ul>
+            </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	 </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+   <!-- Scroll to Top -->
+   <div class="row">
+    <div class="col-md-12 page-scroll">
+      <button onclick="topFunction()" class="ScrollBtn"><i class="fa fa-chevron-up"></i></button>
+    </div>
+   </div>
+   <!-- Social Media -->
+   <div class="row">
+    <div class="col-md-12">
+     <h4>Like this? Share on</h4>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+       <ul class="list-inline">
+        <li><a class="social btn-facebook" href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></li>
+        <li><a class="social btn-twitter" href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        <li><a class="social btn-google-plus" href="https://plus.google.com" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+        <li><a class="social btn-youtube" href="https://www.youtube.com" target="_blank"><i class="fa fa-youtube"></i></a></li>
+        <li><a class="social btn-instagram" href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a></li>
+        <li><a class="social btn-pinterest" href="https://www.pinterest.com" target="_blank"><i class="fa fa-pinterest"></i></a></li>
+       </ul>
+    </div>
+   </div>
+   <!-- Copyright -->
+   <div class="row">
+    <div class="col-md-12">
+     <p class="text-center">
+      &copy; Copyright 2017 by Evelina Wongosari. All rights reserved.
+      <a href="#">Terms of Use</a>
+      <a href="#">Privacy Policy</a>
+     </p>
+    </div>
+   </div>
+  </footer>
+
+   <!-- jQuery Script -->
+   <script src="js/jquery.min.js"></script>
+   <!-- Bootstrap Script -->
+   <script src="js/bootstrap.min.js"></script>
+   <!-- My Scripts -->
+   <script src="js/scripts.js"></script>
+  </div>
+ </body>
+</html>
