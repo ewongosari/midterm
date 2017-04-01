@@ -1,6 +1,8 @@
 # MSTU 5003 Design Document
 
-Write a design document where you explain your project. You should clearly explain the problem you're trying to solve. Be sure to describe the domain you're working with and the users you're trying to target. Remember that the point of your design document is that you can hand it off to any developer and theoretically they would be able to understand and build the program.
+My website is called Symphonia. Its domain is in music education and its main purpose is to teach novice learners, who know nothing about the orchestra, the different families of musical instruments within an orchestra. Not yet finished.
+
+(Write a design document where you explain your project. You should clearly explain the problem you're trying to solve. Be sure to describe the domain you're working with and the users you're trying to target. Remember that the point of your design document is that you can hand it off to any developer and theoretically they would be able to understand and build the program.)
 
 
 ## Topic
@@ -42,8 +44,8 @@ This section should describe objectives, goals and metrics.
 
 Make sure your program does something to measure the consider assessments as a part of your program. Here are a couple.
 
-* Pre assessments
-* Formative assessments
+* Pre assessment
+* Formative assessment
 
 
 ## Scope

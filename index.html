@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Instruments of the Orchestra</title>
+  <title>SYMPHONIA | Instruments of the Orchestra</title>
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" >
@@ -20,7 +20,7 @@
 
  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
     <!-- Responsive Navigation Bar -->
-    <nav class="navbar navbar-primary navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
      <div class="navbar-header page-scroll">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
       <span class="icon-bar"></span>
@@ -28,32 +28,29 @@
       <span class="icon-bar"></span>
       </button>
       <!-- Home -->
-      <a class="navbar-brand page-scroll" id="logo" href="#page-top">Instruments of the Orchestra</a>
+      <a class="navbar-brand page-scroll" href="index.html">SYMPHONIA</a>
 		 </div>
      <!-- Menu -->
 		 <div class="collapse navbar-collapse" id="myNavbar">
 			<ul class="nav navbar-nav">
-			 <li><a class="page-scroll" href="#instructions">Instructions</a></li>
-       <li><a class="page-scroll" href="#orchestra">Orchestra Introduction</a></li>
-       <li><a class="page-scroll" href="#instruments">Meet the Instruments</a></li>
-       <li><a class="page-scroll" href="#resources">Resources</a></li>
+			 <li><a class="page-scroll" href="#instructions">INSTRUCTIONS</a></li>
+       <li><a class="page-scroll" href="#orchestra">THE ORCHESTRA</a></li>
+       <li><a class="page-scroll" href="#instruments">THE INSTRUMENTS</a></li>
+       <li><a class="page-scroll" href="#resources">RESOURCES</a></li>
 			</ul>
 		 </div>
 		</nav>
 
-    <!-- Site Content -->
+    <!-- Page Content -->
     <div class="container">
      <!-- Header Image -->
      <header class="section">
       <div class="row">
        <div class="col-md-12">
-         <div class="hero-image">
-           <img alt="orchestra-header" src="img/header.jpg"></img>
-         </div>
-         <div class="hero-text">
+         <div class="caption">
           <h1>WELCOME</h1>
-          <h3>Get ready to dive into the world of the orchestra</h3>
-          <button class="ScrollBtn">
+          <h4>Get ready to dive into the world of the orchestra</h4>
+          <button class="roundBtn">
            <a class="page-scroll" href="#instructions"><i class="fa fa-chevron-down"></i></a>
           </button>
          </div>
@@ -64,42 +61,64 @@
      <!-- Instructions Section -->
      <section class="section" id="instructions">
       <div class="row">
-       <div class="col-md-4">
-          <img alt="todo" src="http://lorempixel.com/140/140/">
+       <div class="col-md-5 image-section">
+          <img class="img-responsive" alt="to_do" src="img/instruction.jpg">
        </div>
-       <div class="col-md-8">
+       <div class="col-md-7">
         <h1>INSTRUCTIONS</h1>
         <p>
          <ol>
-          <li>Read these instructions completely before starting.</li>
-          <li>Watch a short introduction about the instruments of the orchestra.</li>
-          <li>Learn more about each instrument family by clicking on their categories.</li>
-          <li>Explore further resources once you are all done.</li>
+          <li>Use the top menu to navigate from section to section.</li>
+          <li>Figure out what you already know about the orchestra with a simple quiz. Then head on to watch a short video that introduces the different instrument families.</li>
+          <li>Learn more about each instrument family by clicking on their respective categories.</li>
+          <li>Explore additional resources once you are all done.</li>
         </ol>
         </p>
+        <br>
+        <p>Before you start, take the short quiz below to figure out how much you know about the orchestra.</p>
+        <button class="roundBtn" id="prequizLink" data-toggle="modal" data-target="#modal-prequiz">
+         <a><i class="fa fa-edit"></i></a>
+        </button>
+        <!-- Pop-Up Pre-Quiz -->
+        <div id="modal-prequiz" class="modal fade" tabindex="-1" role="dialog">
+         <div class="modal-dialog">
+          <div class="modal-content">
+           <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+           </div>
+           <div class="modal-body">
+             <p>5 question quiz here. Not working yet.</p>
+           </div>
+          </div>
+         </div>
+        </div>
        </div>
       </div>
-     </section>
+    </section>
 
      <!-- Orchestra Section -->
      <section class="section" id="orchestra">
       <div class="row">
-       <div class="col-md-12">
-        <h1>ORCHESTRA INTRODUCTION</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <button type="button" class="btn btn-info btn-lg" id="videoLink" data-toggle="modal" data-target="#modal-video">Watch Video <i class="fa fa-play"></i></button>
+        <div class="col-md-5 image-section">
+         <img class="img-responsive" alt="orchestra" src="img/orchestra.jpg">
+        </div>
+       <div class="col-md-7">
+        <h1>THE ORCHESTRA</h1>
+        <p>The word <strong>"orchestra"</strong> came from ancient Greece and was used to describe the place where musicians and dancers performed. The modern orchestra is an ensemble of around 100 musicians playing stringed instruments, percussion, wind and brass instruments. It is mainly instrumental in nature but at times may be accompanied by a choir or a soloist.</p>
+        <p>Watch the video below to see a brief overview of the orchestra.</p>
+        <button class="roundBtn" id="videoLink" data-toggle="modal" data-target="#modal-video">
+         <a><i class="fa fa-play"></i></a>
+        </button>
          <!-- Pop-Up Video -->
          <div id="modal-video" class="modal fade" tabindex="-1" role="dialog">
           <div class="modal-dialog">
            <div class="modal-content">
             <div class="modal-header">
-             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+             <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
             </div>
             <div class="modal-body">
-              <div class="embed-responsive embed-responsive-16by9">
-                <p>Video should play here. Not working yet. Will try Javascript.</p>
-               <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=M0Jc4sP0BEE" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>></iframe>
-              </div>
+              <p>Video should play here. Not working yet.</p>
+              <iframe src="https://www.youtube.com/watch?v=M0Jc4sP0BEE" frameborder="0" allowfullscreen>></iframe>
             </div>
            </div>
           </div>
@@ -111,98 +130,111 @@
      <!-- Instruments Section -->
      <section class="section" id="instruments">
       <div class="row">
-        <h1>MEET THE INSTRUMENTS</h1>
-		   <div class="col-md-3">
-			  <img alt="strings family" src="http://lorempixel.com/140/140/">
-			  <button type="button" class="btn btn-warning btn-block btn-lg">
-				STRINGS
-			  </button>
+       <!-- String -->
+		   <div class="col-md-3 image-link">
+        <a href="instruments.html#string">
+         <div class="overlay">
+          <p class="overlay-text">Enter <i class="fa fa-chevron-right"></i></p>
+         </div>
+			   <img class="img-responsive" alt="string_family" src="img/family/string.jpg">
+        </a>
+        <div class="caption">
+         <h3>STRING</h3>
+        </div>
 		   </div>
-       <div class="col-md-3">
-        <img alt="woodwinds family" src="http://lorempixel.com/140/140/">
-        <button type="button" class="btn btn-warning btn-block btn-lg">
-        WOODWINDS
-        </button>
-       </div>
-       <div class="col-md-3">
-        <img alt="brass family" src="http://lorempixel.com/140/140/">
-        <button type="button" class="btn btn-warning btn-block btn-lg">
-        BRASS
-        </button>
-       </div>
-       <div class="col-md-3">
-			  <img alt="percussion family" src="http://lorempixel.com/140/140/">
-			  <button type="button" class="btn btn-warning btn-block btn-lg">
-				PERCUSSION
-			  </button>
+       <!-- Woodwind -->
+       <div class="col-md-3 image-link">
+        <a href="instruments.html#woodwind">
+         <div class="overlay">
+          <p class="overlay-text">Enter <i class="fa fa-chevron-right"></i></p>
+         </div>
+         <img class="img-responsive" alt="woodwind_family" src="img/family/woodwind.jpg">
+        </a>
+			  <div class="caption">
+         <h3>WOODWIND</h3>
+        </div>
+		   </div>
+       <!-- Brass -->
+       <div class="col-md-3 image-link">
+        <a href="instruments.html#brass">
+         <div class="overlay">
+          <p class="overlay-text">Enter <i class="fa fa-chevron-right"></i></p>
+         </div>
+         <img class="img-responsive" alt="brass_family" src="img/family/brass.jpg">
+        </a>
+			  <div class="caption">
+         <h3>BRASS</h3>
+        </div>
+		   </div>
+       <!-- Percussion -->
+       <div class="col-md-3 image-link">
+        <a href="instruments.html#percussion">
+         <div class="overlay">
+          <p class="overlay-text">Enter <i class="fa fa-chevron-right"></i></p>
+         </div>
+         <img class="img-responsive" alt="percussion_family" src="img/family/percussion.jpg">
+        </a>
+			  <div class="caption">
+         <h3>PERCUSSION</h3>
+        </div>
 		   </div>
 	    </div>
     </section>
 
-
   <!-- Resources Section -->
   <section class="section" id="resources">
 	 <div class="row">
-		<div class="col-md-12">
-      <h1>MORE RESOURCES</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <div class="col-md-5 image-section">
+     <img class="img-responsive" alt="resource" src="img/resource.jpg">
+    </div>
+		<div class="col-md-7">
+      <h1>RESOURCES</h1>
+      <p>Want to know more about the orchestra? Check out the following resources.</p>
      <!-- Resources Tabs -->
-		 <div class="tabbable" id="tabs">
-			<ul class="nav nav-tabs">
+		 <div>
+			<ul class="nav nav-tabs nav-justified">
 			 <li class="active">
-				<a href="#panel-websites" data-toggle="tab">Websites</a>
+				<a href="#pane-websites" data-toggle="tab">WEBSITES</a>
 			 </li>
 			 <li>
-				<a href="#panel-videos" data-toggle="tab">Videos</a>
+				<a href="#pane-videos" data-toggle="tab">VIDEOS</a>
 			 </li>
        <li>
-				<a href="#panel-articles" data-toggle="tab">Articles</a>
+				<a href="#pane-apps" data-toggle="tab">APPS</a>
 			 </li>
 			</ul>
         <!-- Resources Lists -->
         <div class="tab-content">
           <!-- Websites -->
-					<div class="tab-pane active" id="panel-websites">
+					<div class="tab-pane fade in active" id="pane-websites">
             <p>
-						 <ul class="list-unstyled">
-							 <li><a href="#" target="_blank"></a>Link 1</li>
-               <p>Short description</p>
-               <li><a href="#" target="_blank"></a>Link 2</li>
-               <p>Short description</p>
-               <li><a href="#" target="_blank"></a>Link 3</li>
-               <p>Short description</p>
-               <li><a href="#" target="_blank"></a>Link 4</li>
-               <p>Short description</p>
+						 <ul>
+               <li><a href="http://www.philharmonia.co.uk/explore" target="_blank">Philharmonia Orchestra</a></li>
+               <li><a href="http://www.artsalive.ca/en/mus/instrumentlab/" target="_blank">Arts Alive Instruments Lab</a></li>
+               <li><a href="http://www.nyphilkids.org/" target="_blank">New York Philharmonic Kidzone</a></li>
+               <li><a href="https://www.mydso.com/dso-kids/learn-and-listen" target="_blank">DSO Kids</a></li>
 						 </ul>
             </p>
 					</div>
           <!-- Videos -->
-					<div class="tab-pane" id="panel-videos">
+					<div class="tab-pane fade" id="pane-videos">
             <p>
-						 <ul class="list-unstyled">
-							 <li><a href="#" target="_blank"></a>Link 1</li>
-               <p>Short description</p>
-               <li><a href="#" target="_blank"></a>Link 2</li>
-               <p>Short description</p>
-               <li><a href="#" target="_blank"></a>Link 3</li>
-               <p>Short description</p>
-               <li><a href="#" target="_blank"></a>Link 4</li>
-               <p>Short description</p>
+						 <ul>
+							 <li><a href="http://www.ted.com/talks/benjamin_zander_on_music_and_passion" target="_blank">Benjamin Zander: The Transformative Power of Classical Music</a></li>
+               <li><a href="https://www.youtube.com/watch?v=WencyslK76o" target="_blank">How Musical Instruments are Classified</a></li>
+               <li><a href="https://www.youtube.com/watch?v=DDRiRzip9ks" target="_blank">Families of Instruments</a></li>
+               <li><a href="https://www.youtube.com/watch?v=sTHXIzHPyqE" target="_blank">Star Wars Flashmob</a></li>
 						 </ul>
             </p>
 					</div>
-          <!-- Articles -->
-          <div class="tab-pane" id="panel-articles">
+          <!-- Apps -->
+          <div class="tab-pane fade" id="pane-apps">
             <p>
-						 <ul class="list-unstyled">
-							 <li><a href="#" target="_blank"></a>Link 1</li>
-               <p>Short description</p>
-               <li><a href="#" target="_blank"></a>Link 2</li>
-               <p>Short description</p>
-               <li><a href="#" target="_blank"></a>Link 3</li>
-               <p>Short description</p>
-               <li><a href="#" target="_blank"></a>Link 4</li>
-               <p>Short description</p>
+						 <ul>
+							 <li><a href="https://itunes.apple.com/us/app/mso-learn/id441422027?mt=8" target="_blank">MSO Learn</a></li>
+               <li><a href="https://itunes.apple.com/us/app/the-orchestra/id560078788?mt=8" target="_blank">The Orchestra</a></li>
+               <li><a href="https://itunes.apple.com/us/app/bravo-gustavo/id327955071?mt=8" target="_blank">Bravo Gustavo</a></li>
+               <li><a href="https://itunes.apple.com/gb/app/young-persons-guide-to-the-orchestra-by-benjamin-britten/id665019589?mt=8" target="_blank">Young Person's Guide to the Orchestra</a></li>
 						 </ul>
             </p>
 					</div>
@@ -212,29 +244,32 @@
 	 </div>
   </section>
 
+  <!-- Scroll to Top -->
+  <div class="row">
+   <div class="col-md-12 text-center page-scroll">
+     <button class="roundBtn scrollUp">
+      <a class="page-scroll" href="#page-top"><i class="fa fa-chevron-up"></i></a>
+     </button>
+   </div>
+  </div>
+
   <!-- Footer -->
   <footer>
-   <!-- Scroll to Top -->
-   <div class="row">
-    <div class="col-md-12 page-scroll">
-      <button onclick="topFunction()" class="ScrollBtn"><i class="fa fa-chevron-up"></i></button>
-    </div>
-   </div>
    <!-- Social Media -->
    <div class="row">
     <div class="col-md-12">
-     <h4>Like this? Share on</h4>
+     <h4 class="text-center">Like this? Share on</h4>
     </div>
    </div>
    <div class="row">
     <div class="col-md-12">
-       <ul class="list-inline">
-        <li><a class="social btn-facebook" href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></li>
-        <li><a class="social btn-twitter" href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
-        <li><a class="social btn-google-plus" href="https://plus.google.com" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-        <li><a class="social btn-youtube" href="https://www.youtube.com" target="_blank"><i class="fa fa-youtube"></i></a></li>
-        <li><a class="social btn-instagram" href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a></li>
-        <li><a class="social btn-pinterest" href="https://www.pinterest.com" target="_blank"><i class="fa fa-pinterest"></i></a></li>
+       <ul class="list-inline text-center">
+        <li><a id="btn-facebook" href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></li>
+        <li><a id="btn-twitter" href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        <li><a id="btn-google-plus" href="https://plus.google.com" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+        <li><a id="btn-youtube" href="https://www.youtube.com" target="_blank"><i class="fa fa-youtube"></i></a></li>
+        <li><a id="btn-instagram" href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a></li>
+        <li><a id="btn-pinterest" href="https://www.pinterest.com" target="_blank"><i class="fa fa-pinterest"></i></a></li>
        </ul>
     </div>
    </div>
@@ -243,8 +278,8 @@
     <div class="col-md-12">
      <p class="text-center">
       &copy; Copyright 2017 by Evelina Wongosari. All rights reserved.
-      <a href="#">Terms of Use</a>
       <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
      </p>
     </div>
    </div>
