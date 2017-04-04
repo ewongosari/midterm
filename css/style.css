@@ -91,9 +91,6 @@ header {
   color: white;
   text-align: center;
 }
-.caption a {
-  color: white;
-}
 
 /* Sections */
 .section {
@@ -101,8 +98,8 @@ header {
   height: 600px;
   margin: 0 auto 60px auto;
 }
-.section .row {
-  padding: 40px 30px 0 30px;
+.text-section {
+  padding: 40px 50px 0 20px;
 }
 /* Section Colors */
 #instructions, #instruments, #string, #brass, #quiz {
@@ -112,36 +109,22 @@ header {
   background-color: #DCAE1D;
 }
 /* Section Fonts */
-section h1 {
+.text-section h1 {
   color: #E14658;
 }
-section h3 {
+.text-section h3 {
   line-height: 2.5;
   background-color: #E14658;
 }
-section p, section ol, section ul {
+.text-section > p, ol, ul, table {
   color: #0B3C5D;
 }
 /* Section Images */
-.image-section {
-  position: relative;
-    top: -40px;
-    left: -15px;
-  max-height: 600px;
-  max-width:  auto;
-  margin : 0;
-  padding: 0;
-}
 .image-section img{
   height: 100%;
 }
 
-/* Rectangle Buttons */
-.btn:focus, .btn:active {
-  outline: none;
-}
-
-/* Pop-Up Modal */
+/* Pop-Up Modal Boxes */
 .modal-backdrop.in {
   filter: alpha(opacity=7);
   opacity: 0.7;
@@ -154,7 +137,6 @@ section p, section ol, section ul {
 }
 .modal-header {
   border: none;
-  padding: 25px 25px 15px 25px;
   text-align: right;
 }
 .modal-header .close {
@@ -165,18 +147,19 @@ section p, section ol, section ul {
   color: white;
   opacity: 1;
 }
-.modal-body {
-  padding: 0 25px 25px 25px;
+button {
+  outline: none;
+}
+
+/* Pop-Up Quizzes */
+#quiz-container {
+  padding: 20px;
+  background-color: #DCAE1D;
+  color:  #0B3C5D;
 }
 
 /* Image Overlay */
 .image-link {
-  position: relative;
-    top: -40px;
-    left: -15px;
-    right: -15px;
-  max-height: 600px;
-  max-width:  auto;
   margin : 0;
   padding: 0;
 }
@@ -245,7 +228,25 @@ section p, section ol, section ul {
     -webkit-transition: all .3s ease;
 }
 
-/* Scroll Buttons */
+/* Instrument Slides */
+.carousel-control {
+  background: none !important;
+ }
+.carousel .carousel-control {
+  visibility: hidden;
+}
+.carousel:hover .carousel-control {
+  visibility: visible;
+}
+/* Instrument Content Tables*/
+.no-header {
+  display:none;
+}
+.table.no-border tr td {
+  border: 0;
+}
+
+/* Round Buttons */
 .roundBtn {
   width: 60px;
   height: 60px;
@@ -253,7 +254,7 @@ section p, section ol, section ul {
   border: 2px solid white;
   background: none;
   font-size: 30px;
-  color: white;
+  text-align: center;
   outline: none;
   cursor: pointer;
 }
