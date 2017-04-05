@@ -67,12 +67,10 @@ h1, h2 {
 h3, h4, h5, h6 {
   letter-spacing: 2px;
 }
-p, ol, ul {
+p, ol, ul, table {
   font-family: "Questrial", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 1px;
-  text-align: justify;
 }
 
 /* Header Image */
@@ -116,8 +114,10 @@ header {
   line-height: 2.5;
   background-color: #E14658;
 }
-.text-section > p, ol, ul, table {
+.text-section > p, ol, ul {
+  font-size: 16px;
   color: #0B3C5D;
+  text-align: justify;
 }
 /* Section Images */
 .image-section img{
@@ -194,6 +194,9 @@ button {
   color: white;
   text-align: center;
 }
+.caption {
+  text-shadow: 3px 3px #0B3C5D;
+}
 
 /* Resource Tabs */
 .nav-tabs > li > a {
@@ -238,12 +241,20 @@ button {
 .carousel:hover .carousel-control {
   visibility: visible;
 }
+.carousel-indicators {
+  bottom: 2px;
+}
+
 /* Instrument Content Tables*/
 .no-header {
   display:none;
 }
 .table.no-border tr td {
   border: 0;
+}
+.text-section .table {
+  font-size: 14px;
+  color: #0B3C5D;
 }
 
 /* Round Buttons */
